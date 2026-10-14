@@ -44,5 +44,5 @@ jobs:
             docker run -d \
               --name frontend_test \
               --restart unless-stopped \
-              -p 3001:80 \
+              -p 3001:5173 \
               ${{ secrets.DOCKER_USERNAME }}/frontend_test:latest
